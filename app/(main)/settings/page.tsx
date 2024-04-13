@@ -2,18 +2,19 @@ import { UserProfile } from "@clerk/nextjs";
 
 export default function SettingsPage() {
   return (
-    <div className="mx-auto max-w-4xl">
-      {/* <UserProfile /> */}
+    <div className="mx-auto max-w-4xl pb-12">
       <UserProfile
         appearance={{
           elements: {
             navbarMobileMenuRow: "hidden",
-            rootBox: "bg-slate-50 rounded-lg my-4 sm:my-8 shadow-none w-full",
-            cardBox: "shadow-none w-full",
-            pageScrollBox: "px-0 sm:px-4 py-4",
-            card: "w-full h-full mx-auto shadow-none bg-slate-50",
+            rootBox: "bg-slate-50 shadow-none w-full",
+            // cardBox: "shadow-none w-full",
+            pageScrollBox: "py-0",
+            card: "bg-slate-50 w-full h-full mx-auto shadow-none",
             navbar: "border-none hidden",
-            navbarButton: "py-3 px-4 my-1 rounded-medium text-body",
+            // navbarButton: "py-3 px-4 my-1 rounded-medium text-body",
+            // membersPageInviteButton:
+            //   "text-primary font-medium bg-interaction-primary hover:bg-interaction-primary-hover rounded-lg px-4 py-2",
           },
         }}
       />
